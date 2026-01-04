@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LynoVerse Official</title>
+
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="https://files.catbox.moe/bzkzuc.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:linear-gradient(135deg,#0f172a,#1e1b4b);
+--glass:rgba(255,255,255,.08);
+--border:rgba(255,255,255,.15);
+--text:rgba(255,255,255,.95);
+--muted:rgba(255,255,255,.65);
+--primary:#7c3aed;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Inter,sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:3rem 1.5rem;
+border-bottom:1px solid var(--border);
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+}
+.profile img{
+width:90px;height:90px;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(124,58,237,.5);
+}
+.verify{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:.4rem;
+font-size:1.6rem;
+font-weight:700;
+margin-top:.6rem;
+}
+.verify span{
+background:#1d9bf0;
+color:white;
+font-size:.9rem;
+padding:.15rem .45rem;
+border-radius:50%;
+}
+header p{color:var(--muted);margin-top:.4rem}
+
+/* SECTION */
+section{
+max-width:1000px;
+margin:3rem auto;
+padding:0 1.5rem;
+}
+.card{
+background:var(--glass);
+border:1px solid var(--border);
+border-radius:24px;
+padding:2.5rem;
+margin-bottom:2.5rem;
+backdrop-filter:blur(20px);
+}
+h2{
+font-size:1.8rem;
+margin-bottom:1rem;
+background:linear-gradient(135deg,#fff,#c7d2fe);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+p{color:var(--muted);line-height:1.7}
+
+/* ORGANIGRAM */
+.org{display:flex;flex-direction:column;align-items:center;margin-top:2rem}
+.level{display:flex;gap:2rem;position:relative}
+.node{
+padding:1rem 1.6rem;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.2);
+border-radius:16px;
+font-weight:600;
+min-width:160px;
+text-align:center;
+}
+.node small{
+display:block;
+margin-top:.3rem;
+font-size:.75rem;
+color:rgba(255,255,255,.7);
+}
+.node.main{
+background:linear-gradient(135deg,#7c3aed,#4c1d95);
+}
+.line{width:2px;height:28px;background:rgba(255,255,255,.35)}
+.level.two::before{
+content:"";
+position:absolute;
+top:-18px;
+left:50%;
+width:70%;
+height:2px;
+background:rgba(255,255,255,.35);
+transform:translateX(-50%);
+}
+
+/* LINKS & LIST */
+.links{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:1rem;
+margin-top:1rem;
+}
+.links a{
+text-decoration:none;
+color:white;
+padding:1rem;
+border-radius:16px;
+background:rgba(255,255,255,.08);
+border:1px solid var(--border);
+transition:.3s;
+}
+.links a:hover{
+background:linear-gradient(135deg,#7c3aed,#6d28d9);
+}
+
+ul{
+margin-top:1rem;
+padding-left:1.2rem;
+color:var(--muted);
+}
+ul li{margin-bottom:.6rem}
+
+/* MUSIC PLAYER */
+.music-player{
+position:fixed;
+bottom:20px;right:20px;
+display:flex;align-items:center;gap:.7rem;
+padding:.8rem 1rem;
+background:rgba(15,23,42,.85);
+border-radius:20px;
+border:1px solid var(--border);
+backdrop-filter:blur(15px);
+}
+.music-cover{
+width:48px;height:48px;
+border-radius:14px;
+}
+.music-btn{
+border:none;
+background:linear-gradient(135deg,#7c3aed,#6d28d9);
+color:white;
+padding:.6rem .75rem;
+border-radius:14px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:2rem;
+font-size:.85rem;
+color:var(--muted);
+border-top:1px solid var(--border);
+background:rgba(255,255,255,.05);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="profile">
+<img src="https://files.catbox.moe/bzkzuc.jpg">
+<div class="verify">𝕷𝖞𝖓𝖔𝖁𝖊𝖗𝖘𝖊 𝕸𝖆𝖗𝖌𝖆 <span>✔</span></div>
+</div>
+<p>LynoVerse Marga | 2025–2026</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>Welcome</h2>
+<p>LynoVerse adalah marga yang dibuat oleh panñn, dengan admin dan member yang ramah.
+mau join? scroll ajah ygy</p>
+</div>
+
+<div class="card">
+<h2>Struktur Marga</h2>
+<div class="org">
+<div class="level"><div class="node main">Founder<small>panñn</small></div></div>
+<div class="line"></div>
+<div class="level"><div class="node">Owner<small>pelinn</small></div></div>
+<div class="line"></div>
+<div class="level two">
+<div class="node">Pengurus I<small>tasaa</small></div>
+<div class="node">Pengurus II<small>zazaa</small></div>
+</div>
+<div class="line"></div>
+<div class="level two">
+<div class="node">Petinggi I<small>kinaaa</small></div>
+<div class="node">Petinggi II<small>ryuu</small></div>
+</div>
+<div class="line"></div>
+<div class="level"><div class="node">Editor<small>araa</small></div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Syarat Join</h2>
+<div class="links">
+<a>1. umur 13+</a>
+<a>2. follow sosmed marga !!</a>
+<a>3. patuhi rules</a>
+<a>4. numpang tagsw doang? suh suh, kluar aj sono</a>
+<a>5. mau join? click yang "saluran lynoverse", lalu scroll sampe ada laman pendaftaran ( cari aja #pndftrn )</a>
+</div>
+</div>
+
+<div class="card">
+<h2>Sosial Media LynoVerse</h2>
+<div class="links">
+<a href="#">Group LynoVerse ( Click Here )</a>
+<a href="#">Saluran LynoVerse ( Click Here )</a>
+<a href="https://tiktok.com/@panntzys">Tiktok LynoVerse ( Click Here )</a>
+</div>
+</div>
+
+<div class="card">
+<h2>Rules LynoVerse</h2>
+<div class="links">
+<a>1. dilarang promosi</a>
+<a>2. tagsw? jan sering ege</a>
+<a>3. dilarang share 18+</a>
+<a>4. drama? tcih</a>
+<a>5. share foto/video 1x lihat</a>
+<a>6. dilarang bucin, karna mimin jomblo :v</a>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 LynoVerse Official<br>
+One Blood · One Legacy 🔱
+</footer>
+
+</body>
+</html>
